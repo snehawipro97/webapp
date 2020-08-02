@@ -14,7 +14,7 @@ app.use('/api/v1', fileServices);
 
 
 // Serve any static files
-app.use(express.static(path.join(__dirname, './client/build')));
+app.use(express.static(path.join(__dirname, './client/training/dist')));
 app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST');
